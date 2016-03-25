@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.map.Second" >
+
+    
+    <item 
+        
+        android:id="@+id/send"
+        android:title="Send"
+        android:icon="@android:drawable/ic_menu_send"
+        android:showAsAction="always"
+        />
+    
+  
+
+</menu>

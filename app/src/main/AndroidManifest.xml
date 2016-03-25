@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.map"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+ 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icion"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+         
+        android:hardwareAccelerated="false">
+        
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+<service android:name="com.example.map.SyncService"></service>
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyA2mT8A7ODViDgW7QHuqMVZ6N-CkITHc30" />
+
+        <activity
+            android:name=".Second"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="nosensor"
+            android:label="@string/title_activity_second" >
+        </activity>
+        <activity
+            android:name=".TypeOfComplain"
+            android:label="@string/title_activity_type_of_complain" >
+        </activity>
+        <activity
+            android:name=".TakePic"
+            android:label="@string/title_activity_take_pic" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/main_activity" >
+        </activity>
+        <activity
+            android:name=".Aboutapp"
+            android:label="@string/title_activity_aboutapp" >
+        </activity>
+        <activity
+            android:name=".ComplainsActivty"
+            android:label="@string/title_activity_complains_activty" >
+        </activity>
+        
+        <receiver android:name="com.example.map.NetworkListner"
+          android:label="NetworkConnection">
+  <intent-filter>
+    <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+  </intent-filter>
+</receiver>
+        
+        
+    </application>
+
+</manifest>

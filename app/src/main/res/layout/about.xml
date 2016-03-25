@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back58" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="About App"
+        android:layout_marginBottom="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textColor="#000000"
+        android:text="FUSSING MAP \n Version 1.0 \n This application will help the users to send a complaint reports against damaged roads, barred head main holes, Road accidents, Garbage etc. The complaint will be directly sent to the concerned government departments with the help of few simple clicks. \n This application is also beneficial to the government for keeping the record of their quality and mantainence of roads and streets. \n Developed by: \n Students of CUSIT \n Muhammad Saad \n Bazil Khan \n Zain Ul Abideen" />
+</LinearLayout>
